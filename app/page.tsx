@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
@@ -15,7 +16,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-br from-purple-900 via-black to-blue-900 text-white px-4 py-12">
-      
+
       {/* Hero Title + Subtitle */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
@@ -113,8 +114,8 @@ export default function Home() {
       >
         <h2 className="text-2xl font-bold mb-3">📄 ThinkYoSelf Classic Meme Whitepaper</h2>
         <p className="mb-4 text-sm sm:text-base">
-          This is the "unofficial" whitepaper, the one written at 3am under the influence of meme-induced enlightenment.
-          It contains just enough truth to keep you wondering if we're joking. Spoiler! We are, but also not.
+          This is the &quot;unofficial&quot; whitepaper, the one written at 3am under the influence of meme-induced enlightenment.
+          It contains just enough truth to keep you wondering if we&apos;re joking. Spoiler! We are, but also not.
         </p>
         <a
           href="/pdfs/ThinkYoSelf-Classic-Meme-Whitepaper.pdf"
@@ -125,7 +126,7 @@ export default function Home() {
           🧻 Download Meme Whitepaper
         </a>
         <p className="text-xs mt-3 opacity-80">
-          Want the <em>real</em> whitepaper? You’ll need to fork your email for that. Subscribe above.
+          Want the <em>real</em> whitepaper? You&apos;ll need to fork your email for that. Subscribe above.
         </p>
       </motion.section>
 
