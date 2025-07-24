@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-br from-purple-900 via-black to-blue-900 text-white px-4 py-12">
-
+      
       {/* Hero Title + Subtitle */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
@@ -43,6 +43,7 @@ export default function Home() {
           width={512}
           height={512}
           className="mb-8 rounded-xl shadow-xl"
+          priority
         />
       </motion.div>
 
@@ -53,6 +54,7 @@ export default function Home() {
         width={326}
         height={326}
         className="mx-auto my-6"
+        priority
       />
 
       {/* Mint Address Box */}
@@ -84,11 +86,12 @@ export default function Home() {
         transition={{ duration: 0.6, delay: 0.6 }}
         className="w-full max-w-md mb-10"
       >
-        <label className="block mb-2 text-sm font-medium text-white">
+        <label htmlFor="email" className="block mb-2 text-sm font-medium text-white">
           Get updates from Thinky 📬
         </label>
         <div className="flex flex-col sm:flex-row gap-3">
           <input
+            id="email"
             type="email"
             required
             value={email}
@@ -117,14 +120,14 @@ export default function Home() {
           This is the &quot;unofficial&quot; whitepaper, the one written at 3am under the influence of meme-induced enlightenment.
           It contains just enough truth to keep you wondering if we&apos;re joking. Spoiler! We are, but also not.
         </p>
-        <a
+        <Link
           href="/pdfs/ThinkYoSelf-Classic-Meme-Whitepaper.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block mt-4 bg-purple-600 hover:bg-purple-800 text-white px-6 py-2 rounded-xl font-semibold transition"
         >
           🧻 Download Meme Whitepaper
-        </a>
+        </Link>
         <p className="text-xs mt-3 opacity-80">
           Want the <em>real</em> whitepaper? You&apos;ll need to fork your email for that. Subscribe above.
         </p>
@@ -137,16 +140,16 @@ export default function Home() {
         transition={{ duration: 0.6, delay: 0.8 }}
         className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-center text-sm mt-10"
       >
-        <a href="https://t.me/ThinkYoSelfClassic" target="_blank" className="hover:underline">🧠 Telegram Chat</a>
-        <a href="https://t.me/ThinkYoSelfCoinClassic" target="_blank" className="hover:underline">🔮 Broadcast Channel</a>
-        <a href="https://twitter.com/ThinkYoSelf" target="_blank" className="hover:underline">🧬 Twitter / X</a>
-        <a href="https://www.instagram.com/ThinkYoSelfClassic" target="_blank" className="hover:underline">📸 Instagram</a>
-        <a href="https://www.tiktok.com/@ThinkYoSelfClassic" target="_blank" className="hover:underline">🎥 TikTok</a>
-        <a href="https://www.facebook.com/ThinkYoSelfClassic" target="_blank" className="hover:underline">👤 Facebook</a>
-        <a href="https://www.youtube.com/@thinkyoselfcoinclassic" target="_blank" className="hover:underline">💥 YouTube</a>
-        <a href="https://ThinkYoSelfClassic.xyz" target="_blank" className="hover:underline">🌐 Culture</a>
-        <a href="https://ThinkYoSelfClassic.io" target="_blank" className="hover:underline">🧪 Utility Portal</a>
-        <a href="https://ThinkYoSelfCoinClassic.com" target="_blank" className="hover:underline">🧠 Discord HQ</a>
+        <a href="https://t.me/ThinkYoSelfClassic" target="_blank" rel="noopener noreferrer" className="hover:underline">🧠 Telegram Chat</a>
+        <a href="https://t.me/ThinkYoSelfCoinClassic" target="_blank" rel="noopener noreferrer" className="hover:underline">🔮 Broadcast Channel</a>
+        <a href="https://twitter.com/ThinkYoSelf" target="_blank" rel="noopener noreferrer" className="hover:underline">🧬 Twitter / X</a>
+        <a href="https://www.instagram.com/ThinkYoSelfClassic" target="_blank" rel="noopener noreferrer" className="hover:underline">📸 Instagram</a>
+        <a href="https://www.tiktok.com/@ThinkYoSelfClassic" target="_blank" rel="noopener noreferrer" className="hover:underline">🎥 TikTok</a>
+        <a href="https://www.facebook.com/ThinkYoSelfClassic" target="_blank" rel="noopener noreferrer" className="hover:underline">👤 Facebook</a>
+        <a href="https://www.youtube.com/@thinkyoselfcoinclassic" target="_blank" rel="noopener noreferrer" className="hover:underline">💥 YouTube</a>
+        <a href="https://ThinkYoSelfClassic.xyz" target="_blank" rel="noopener noreferrer" className="hover:underline">🌐 Culture</a>
+        <a href="https://ThinkYoSelfClassic.io" target="_blank" rel="noopener noreferrer" className="hover:underline">🧪 Utility Portal</a>
+        <a href="https://ThinkYoSelfCoinClassic.com" target="_blank" rel="noopener noreferrer" className="hover:underline">🧠 Discord HQ</a>
       </motion.div>
     </main>
   );
