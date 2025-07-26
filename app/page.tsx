@@ -38,23 +38,27 @@ export default function Home() {
         transition={{ duration: 0.6, delay: 0.3 }}
       >
         <Image
-          src="/images/hero-tysc.webp"
+          src="/images/hero-tysc-v2.webp"
           alt="ThinkYoSelf Classic Hero"
           width={512}
           height={512}
           className="mb-8 rounded-xl shadow-xl"
           priority
+          unoptimized={true}
+          onError={(e) => console.log("Hero image failed to load", e)}
         />
       </motion.div>
 
       {/* Logo */}
       <Image
-        src="/images/logo-tysc.webp"
+        src="/images/logo-tysc-v2.webp"
         alt="ThinkYoSelf Logo"
         width={326}
         height={326}
         className="mx-auto my-6"
         priority
+        unoptimized={true}
+        onError={(e) => console.log("Logo failed to load", e)}
       />
 
       {/* Mint Address Box */}
