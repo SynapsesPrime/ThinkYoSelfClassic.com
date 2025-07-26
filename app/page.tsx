@@ -125,7 +125,7 @@ export default function Home() {
           It contains just enough truth to keep you wondering if we&apos;re joking. Spoiler! We are, but also not.
         </p>
         <Link
-          href="/pdfs/ThinkYoSelf-Classic-Meme-Whitepaper.pdf"
+          href="/pdfs/ThinkYoSelf-Classic-Meme-Whitepaper-v2.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block mt-4 bg-purple-600 hover:bg-purple-800 text-white px-6 py-2 rounded-xl font-semibold transition"
