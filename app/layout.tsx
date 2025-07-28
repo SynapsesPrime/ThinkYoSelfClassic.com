@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "ThinkYoSelf Classic - TYSC",
   description: "The first conscious meme coin for neural evolution and digital enlightenment.",
-  viewport: "width=device-width, initial-scale=1"
+  viewport: "width=device-width, initial-scale=1",
   icons:  {
     icon:  [
       { url: "/favicon.ico" },
