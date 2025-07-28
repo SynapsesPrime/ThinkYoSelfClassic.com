@@ -15,7 +15,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-br from-purple-900 via-black to-blue-900 text-white px-4 py-12">
+    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-br from-purple-900 via-black to-blue-900 text-white px-4 py-12 overflow-x-hidden">
       
       {/* Hero Title + Subtitle */}
       <motion.div
