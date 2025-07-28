@@ -27,6 +27,31 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
   },
   manifest: "/site.webmanifest", 
+
+  // Open Graph Metadata
+  openGraph: {
+    title: "ThinkYoSelf Classic - TYSC",
+    description: "The first conscious meme coin for neural evolution and digital enlightenment.",
+    url: "https://ThinkYoSelfClassic.com", 
+    siteName: "ThinkYoSelf Classic",
+    images: [
+      {
+        url: "/opengraph-tysc.png",
+        width: 1200,
+        height: 630,
+        alt: "ThinkYoSelf Classic Banner",
+      },
+    ],
+    type: "website",
+  },
+
+  // Twitter Metadata
+  twitter: {
+    card: "summary_large_image",
+    title: "ThinkYoSelf - TYSC",
+    description: "The first conscious meme coin for neural evolution and digital enlightenment.",
+    images: ["/opengraph-tysc.png"]
+  }
 };
 
 export default function RootLayout({
