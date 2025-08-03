@@ -8,13 +8,7 @@ import { motion } from 'framer-motion';
 export default function Home() {
   const [email, setEmail] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert(`Thanks for joining, ${email}!`);
-    setEmail('');
-  };
-
-  return (
+    return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-br from-purple-900 via-black to-blue-900 text-white px-4 py-12 overflow-x-hidden">
       
       {/* Hero Title + Subtitle */}
@@ -83,34 +77,37 @@ export default function Home() {
       </motion.div>
 
       {/* Email Form */}
-      <motion.form
-        onSubmit={handleSubmit}
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.6 }}
-        className="w-full max-w-md mb-10"
-      >
-        <label htmlFor="email" className="block mb-2 text-sm font-medium text-white">
-          Get updates from Thinky 📬
-        </label>
-        <div className="flex flex-col sm:flex-row gap-3">
-          <input
-            id="email"
-            type="email"
-            required
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Enter your email"
-            className="flex-1 px-4 py-2 rounded-xl text-black"
-          />
-          <button
-            type="submit"
-            className="bg-purple-600 hover:bg-purple-800 px-6 py-2 rounded-xl font-semibold transition"
-          >
-            Join
-          </button>
-        </div>
-      </motion.form>
+<motion.form
+  method="POST"
+  action="https://ffec09e3.sibforms.com/serve/MUIFABym0-nvtIcidiJUkaDJRHDCS3z0AWmIWnYKI-7QDqAJUjfjroQFjycbIttRDJN4hwdVlp12Qrxp8hueHWJ6GvkK12cy6CSaqQfwDHML0EyQdWC2qczdxU-28Pl70Opq57x0xeZf28A69uw7g0frxK-h5vCLEzka_RPi4Fm_Kstki-5wzN6q35kpngYGHx0WXP--wGBSfZSA" // <-- Replace this with your actual Brevo embed form link
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.6 }}
+  className="w-full max-w-md mb-10"
+>
+  <label htmlFor="email" className="block mb-2 text-sm font-medium text-white">
+    Get updates from Thinky 📬
+  </label>
+  <div className="flex flex-col sm:flex-row gap-3">
+    <input
+      id="email"
+      name="EMAIL"
+      type="email"
+      required
+      value={email}
+      onChange={(e) => setEmail(e.target.value)}
+      placeholder="Enter your email"
+      className="flex-1 px-4 py-2 rounded-xl bg-transparent text-white placeholder-white border border-white focus:outline-none focus:ring-2 focus:ring-purple-600"
+    />
+    <button
+      type="submit"
+      className="bg-purple-600 hover:bg-purple-800 px-6 py-2 rounded-xl font-semibold transition text-white"
+    >
+      Join
+    </button>
+  </div>
+</motion.form>
+
 
       {/* Meme Whitepaper Section */}
       <motion.section
