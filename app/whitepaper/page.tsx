@@ -15,28 +15,28 @@ export default function WhitepaperPage() { // Ensure this is the default export
         transition={{ duration: 0.5 }}
       >
         <form
-          method="POST"
-          action="https://ffec09e3.sibforms.com/serve/MUIFADgT8xHAstij3vMUre4A3vn05NJkWjPkDt6D8SFFZnKIUt9FsUkUxxqfK3QffizeKQdM2O7oNWCliW_V-x_WnGRnIKpznoU2yZ4_TDB9QnKDf74mre_bz1uQoqqOJVfjkFN6VZ3wSA_I1vmNCiDUUUfTYZ4sIaZnShJMf7u0sAGSdCaOwl8-BiwEuRinzvMwYOPBiF3F64sM"
-          className="w-full"
-        >
-          <input
-            type="email"
-            name="EMAIL"
-            required
-            placeholder="Enter your email"
-            className="w-full px-4 py-2 text-black bg-white rounded shadow mb-4"
-          />
-          
-          <input type="hidden" name="sib_success_url" value="https://thinkyoselfclassic.com/confirm" />
-          <input type="hidden" name="sib_error_url" value="https://thinkyoselfclassic.com/error" />
-
-          <button
-            type="submit"
-            className="w-full bg-purple-600 hover:bg-purple-800 text-white font-semibold py-3 rounded-md transition"
-          >
-            Access to TYSC Whitepaper
-          </button>
-        </form>
+  method="POST"
+  action="https://ffec09e3.sibforms.com/serve/MUIFABym0-nvtIcidiJUkaDJRHDCS3z0AWmIWnYKI-7QDqAJUjfjroQFjycbIttRDJN4hwdVlp12Qrxp8hueHWJ6GvkK12cy6CSaqQfwDHML0EyQdWC2qczdxU-28Pl70Opq57x0xeZf28A69uw7g0frxK-h5vCLEzka_RPi4Fm_Kstki-5wzN6q35kpngYGHx0WXP--wGBSfZSA"
+  className="relative"
+>
+  {/* Honeypot field */}
+  <input 
+    type="text" 
+    name="firstname" 
+    className="absolute opacity-0 h-0 w-0" 
+    tabIndex={-1}
+    autoComplete="off"
+  />
+  
+  {/* Real form fields */}
+  <input
+    type="email"
+    name="EMAIL"
+    required
+    className="w-full px-4 py-2 text-black bg-white rounded shadow mb-4"
+  />
+  <button type="submit">Access Whitepaper</button>
+</form>
       </motion.div>
 
       <Script 
