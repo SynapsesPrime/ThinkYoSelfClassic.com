@@ -1,5 +1,4 @@
 'use client';
-
 import Script from 'next/script';
 import { motion } from 'framer-motion';
 
@@ -15,6 +14,7 @@ export default function WhitepaperPage() {
         transition={{ duration: 0.5 }}
       >
         <div id="sib-container" className="text-left">
+          {/* Brevo's pure HTML form - NO onSubmit or handleSubmit */}
           <form
             id="sib-form"
             method="POST"
@@ -27,9 +27,10 @@ export default function WhitepaperPage() {
               id="EMAIL"
               required
               placeholder="Enter your email"
-              className="w-full px-4 py-2 text-black bg-white rounded shadow"
+              className="w-full px-4 py-2 text-black bg-white rounded shadow mb-4"
             />
 
+            {/* CRITICAL: Ensure these match your Brevo settings */}
             <input
               type="hidden"
               name="sib_success_url"
@@ -43,22 +44,22 @@ export default function WhitepaperPage() {
 
             <button
               type="submit"
-              className="w-full bg-black text-white font-semibold py-3 rounded-md hover:bg-gray-800 transition"
+              className="w-full bg-purple-600 hover:bg-purple-800 text-white font-semibold py-3 rounded-md transition"
             >
-              Subscribe
+              Access to TYSC Whitepaper
             </button>
           </form>
         </div>
       </motion.div>
 
-      {/* Brevo + reCAPTCHA scripts */}
-      <Script
-        strategy="afterInteractive"
-        src="https://sibforms.com/forms/end-form/build/main.js"
+      {/* Brevo's required scripts */}
+      <Script 
+        strategy="afterInteractive" 
+        src="https://sibforms.com/forms/end-form/build/main.js" 
       />
-      <Script
-        strategy="afterInteractive"
-        src="https://www.google.com/recaptcha/api.js?hl=en"
+      <Script 
+        strategy="afterInteractive" 
+        src="https://www.google.com/recaptcha/api.js?hl=en" 
       />
     </div>
   );
