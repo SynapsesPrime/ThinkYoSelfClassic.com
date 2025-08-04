@@ -79,7 +79,7 @@ export default function Home() {
       {/* Email Form */}
 <motion.form
   method="POST"
-  action="https://ffec09e3.sibforms.com/serve/MUIFABym0-nvtIcidiJUkaDJRHDCS3z0AWmIWnYKI-7QDqAJUjfjroQFjycbIttRDJN4hwdVlp12Qrxp8hueHWJ6GvkK12cy6CSaqQfwDHML0EyQdWC2qczdxU-28Pl70Opq57x0xeZf28A69uw7g0frxK-h5vCLEzka_RPi4Fm_Kstki-5wzN6q35kpngYGHx0WXP--wGBSfZSAhttps://ffec09e3.sibforms.com/serve/MUIFAJsK_jYBVq7TSz3xapuRgG28Iou0SkfqPwl4VrLyhoIAtTEYkm6vWgUbbk1xUT_TsY6cGfse_lNZa4N5r5WUbTDEp2s6ewjqCoyAGpdt4PQ1DjytZNnsIVv-E4iqr31PpDEDEO_EoxVKGER2JJ7mtCTYcZkqIz7Xwd_ONYMH9321RUFwF_ez68nEJb9Z7j_lOCmXneA3OlLE" // <-- Replace this with your actual Brevo embed form link
+  action="https://ffec09e3.sibforms.com/serve/MUIFABym0-nvtIcidiJUkaDJRHDCS3z0AWmIWnYKI-7QDqAJUjfjroQFjycbIttRDJN4hwdVlp12Qrxp8hueHWJ6GvkK12cy6CSaqQfwDHML0EyQdWC2qczdxU-28Pl70Opq57x0xeZf28A69uw7g0frxK-h5vCLEzka_RPi4Fm_Kstki-5wzN6q35kpngYGHx0WXP--wGBSfZSA" // <-- Replace this with your actual Brevo embed form link
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6, delay: 0.6 }}

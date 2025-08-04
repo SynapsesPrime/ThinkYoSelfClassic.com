@@ -15,26 +15,30 @@ export default function WhitepaperPage() {
       >
         <form
           method="POST"
-          action="https://ffec09e3.sibforms.com/serve/MUIFAJsK_jYBVq7TSz3xapuRgG28Iou0SkfqPwl4VrLyhoIAtTEYkm6vWgUbbk1xUT_TsY6cGfse_lNZa4N5r5WUbTDEp2s6ewjqCoyAGpdt4PQ1DjytZNnsIVv-E4iqr31PpDEDEO_EoxVKGER2JJ7mtCTYcZkqIz7Xwd_ONYMH9321RUFwF_ez68nEJb9Z7j_lOCmXneA3OlLEhttps://ffec09e3.sibforms.com/serve/MUIFADgT8xHAstij3vMUre4A3vn05NJkWjPkDt6D8SFFZnKIUt9FsUkUxxqfK3QffizeKQdM2O7oNWCliW_V-x_WnGRnIKpznoU2yZ4_TDB9QnKDf74mre_bz1uQoqqOJVfjkFN6VZ3wSA_I1vmNCiDUUUfTYZ4sIaZnShJMf7u0sAGSdCaOwl8-BiwEuRinzvhttps://ffec09e3.sibforms.com/serve/MUIFAJsK_jYBVq7TSz3xapuRgG28Iou0SkfqPwl4VrLyhoIAtTEYkm6vWgUbbk1xUT_TsY6cGfse_lNZa4N5r5WUbTDEp2s6ewjqCoyAGpdt4PQ1DjytZNnsIVv-E4iqr31PpDEDEO_EoxVKGER2JJ7mtCTYcZkqIz7Xwd_ONYMH9321RUFwF_ez68nEJb9Z7j_lOCmXneA3OlLE"
-          className="w-full"
+          action="https://ffec09e3.sibforms.com/serve/MUIFABym0-nvtIcidiJUkaDJRHDCS3z0AWmIWnYKI-7QDqAJUjfjroQFjycbIttRDJN4hwdVlp12Qrxp8hueHWJ6GvkK12cy6CSaqQfwDHML0EyQdWC2qczdxU-28Pl70Opq57x0xeZf28A69uw7g0frxK-h5vCLEzka_RPi4Fm_Kstki-5wzN6q35kpngYGHx0WXP--wGBSfZSA"
+          className="w-full bg-white p-6 rounded-lg shadow-xl"
           data-type="subscription"
         >
           {/* Email Field */}
-          <input
-            type="email"
-            name="EMAIL"
-            required
-            placeholder="Enter your email"
-            className="w-full px-4 py-2 text-black bg-white rounded shadow mb-4"
-          />
+          <div className="mb-4">
+            <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">
+              Email Address
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="EMAIL"
+              required
+              placeholder="your@email.com"
+              className="w-full px-4 py-2 text-gray-900 bg-gray-50 rounded border border-gray-300 focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+            />
+          </div>
 
-          {/* reCAPTCHA Widget */}
-          <div 
-            className="g-recaptcha mb-4"
-            data-sitekey="6LeIA4orAAAAAJfuQGKTpUYmUE_5eABRj30vRubPUR_RECAPTCHA_SITE_KEY"
-            data-callback="onSubmit"
-            data-size="normal"
-          ></div>
+          {/* Security Fields */}
+          <div className="hidden">
+            <input type="text" name="first_name" autoComplete="off" tabIndex={-1} />
+            <input type="hidden" name="timezone" value={new Date().getTimezoneOffset()} />
+          </div>
 
           {/* Hidden Fields */}
           <input type="hidden" name="sib_success_url" value="https://thinkyoselfclassic.com/confirm" />
@@ -42,7 +46,7 @@ export default function WhitepaperPage() {
 
           <button
             type="submit"
-            className="w-full bg-purple-600 hover:bg-purple-800 text-white font-semibold py-3 rounded-md transition"
+            className="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-4 rounded-md transition duration-200 transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50"
           >
             Access to TYSC Whitepaper
           </button>
@@ -50,10 +54,6 @@ export default function WhitepaperPage() {
       </motion.div>
 
       {/* Required Scripts */}
-      <Script 
-        strategy="afterInteractive" 
-        src="https://www.google.com/recaptcha/api.js?hl=en&render=explicit" 
-      />
       <Script 
         strategy="afterInteractive" 
         src="https://sibforms.com/forms/end-form/build/main.js" 
