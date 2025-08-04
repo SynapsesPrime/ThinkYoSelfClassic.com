@@ -15,7 +15,7 @@ export default function WhitepaperPage() {
       >
         <form
           method="POST"
-          action="https://ffec09e3.sibforms.com/serve/MUIFADgT8xHAstij3vMUre4A3vn05NJkWjPkDt6D8SFFZnKIUt9FsUkUxxqfK3QffizeKQdM2O7oNWCliW_V-x_WnGRnIKpznoU2yZ4_TDB9QnKDf74mre_bz1uQoqqOJVfjkFN6VZ3wSA_I1vmNCiDUUUfTYZ4sIaZnShJMf7u0sAGSdCaOwl8-BiwEuRinzvMwYOPBiF3F64sM"
+          action="https://ffec09e3.sibforms.com/serve/MUIFAJsK_jYBVq7TSz3xapuRgG28Iou0SkfqPwl4VrLyhoIAtTEYkm6vWgUbbk1xUT_TsY6cGfse_lNZa4N5r5WUbTDEp2s6ewjqCoyAGpdt4PQ1DjytZNnsIVv-E4iqr31PpDEDEO_EoxVKGER2JJ7mtCTYcZkqIz7Xwd_ONYMH9321RUFwF_ez68nEJb9Z7j_lOCmXneA3OlLEhttps://ffec09e3.sibforms.com/serve/MUIFADgT8xHAstij3vMUre4A3vn05NJkWjPkDt6D8SFFZnKIUt9FsUkUxxqfK3QffizeKQdM2O7oNWCliW_V-x_WnGRnIKpznoU2yZ4_TDB9QnKDf74mre_bz1uQoqqOJVfjkFN6VZ3wSA_I1vmNCiDUUUfTYZ4sIaZnShJMf7u0sAGSdCaOwl8-BiwEuRinzvhttps://ffec09e3.sibforms.com/serve/MUIFAJsK_jYBVq7TSz3xapuRgG28Iou0SkfqPwl4VrLyhoIAtTEYkm6vWgUbbk1xUT_TsY6cGfse_lNZa4N5r5WUbTDEp2s6ewjqCoyAGpdt4PQ1DjytZNnsIVv-E4iqr31PpDEDEO_EoxVKGER2JJ7mtCTYcZkqIz7Xwd_ONYMH9321RUFwF_ez68nEJb9Z7j_lOCmXneA3OlLE"
           className="w-full"
           data-type="subscription"
         >
