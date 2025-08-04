@@ -12,6 +12,13 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* Add reCAPTCHA styles here - above media queries */
+.g-recaptcha {
+  transform: scale(0.85);
+  transform-origin: 0 0;
+  margin-bottom: 1rem;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
