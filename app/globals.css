@@ -12,6 +12,19 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* Fix button cutoff on tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .sib-form button[type="submit"] {
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
+    min-height: 52px !important;
+  }
+  
+  .sib-form-container {
+    padding-bottom: 20px !important;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
